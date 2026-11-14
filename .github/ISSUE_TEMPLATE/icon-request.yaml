@@ -1,0 +1,37 @@
+name: 🎨 Icon / Metaphor Request
+description: Propose a new Ghanaian or African UI icon for @vectui/icons
+title: "[Icon]: "
+labels: ["icon-request", "good first issue"]
+body:
+  - type: input
+    id: icon-name
+    attributes:
+      label: Proposed Icon Name (kebab-case)
+      placeholder: e.g., momo-cash-out, trotro, asanka, gye-nyame
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Fintech & Mobile Money
+        - Transit & Infrastructure
+        - Food & Kitchenware
+        - Culture & Adinkra
+        - Commerce & Retail
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Cultural / Product Use Case
+      description: Where would a designer or developer use this icon in an app?
+      placeholder: Used on fintech checkout screens to indicate cash-out at a Mobile Money agent kiosk.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Visual Reference (Optional)
+      description: Paste a link, sketch, or description of key visual elements.
